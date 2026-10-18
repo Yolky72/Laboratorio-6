@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2 - Tecnología y Desarrollo Web</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Paleta Tecnología / Slate Indigo & Violeta */
+        :root {
+            --header-bg: #1e1e38;
+            --accent-indigo: #818cf8;
+            --accent-hover: #a5b4fc;
+            --page-bg: #f3f4fa;
+            --heading-color: #312e81;
+            --subheading-color: #4338ca;
+            --border-accent: #6366f1;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #2b2d42;
+            background-color: var(--page-bg);
+        }
+
+        header {
+            background-color: var(--header-bg);
+            padding: 1rem 2rem;
+            box-shadow: 0 3px 8px rgba(30, 30, 56, 0.25);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: #ffffff !important;
+            text-decoration: none !important;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+            padding-bottom: 4px;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav a:hover {
+            color: var(--accent-hover) !important;
+        }
+
+        nav a.active {
+            color: var(--accent-indigo) !important;
+            border-bottom: 2px solid var(--accent-indigo) !important;
+        }
+
+        .main-container {
+            max-width: 950px;
+            margin: 3rem auto;
+            padding: 2.5rem;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(79, 70, 229, 0.08);
+            border-top: 5px solid var(--border-accent);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--heading-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .section-title {
+            color: var(--subheading-color);
+        }
+
+        .img-showcase {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(30, 30, 56, 0.12);
+            border: 2px solid #e0e7ff;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .img-showcase:hover {
+            transform: scale(1.02);
+            border-color: var(--border-accent);
+        }
+
+        .alert-tech {
+            background-color: #e0e7ff;
+            border-color: #c7d2fe;
+            color: #312e81;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #e0e7ff;
+            color: var(--heading-color);
+            font-weight: 600;
+        }
+
+        .accordion-button:focus {
+            box-shadow: 0 0 0 0.25rem rgba(99, 102, 241, 0.25);
+            border-color: var(--border-accent);
+        }
+
+        .badge-indigo {
+            background-color: #4f46e5;
+            color: #ffffff;
+        }
+
+        .badge-teal {
+            background-color: #0d9488;
+            color: #ffffff;
+        }
+
+        .badge-sky {
+            background-color: #0284c7;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú de navegación idéntico a index.html con página actual activa y paleta tecnológica -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina1.html">Página 1</a></li>
+                <li><a href="pagina2.html" class="active" aria-current="page">Página 2</a></li>
+                <li><a href="pagina3.html">Página 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <h1>Tecnología y Desarrollo Web</h1>
+
+        <!-- Componente Bootstrap 1: Alerta informativa con icono y botón descartable -->
+        <div class="alert alert-tech alert-dismissible fade show my-4" role="alert">
+            <h5 class="alert-heading fw-bold">💻 Componente Bootstrap: Alerta Tecnológica</h5>
+            ¡Estás en la Página 2! Aquí exploramos las herramientas, metodologías y estándares que dan forma al ecosistema del software moderno.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+        </div>
+
+        <!-- Párrafo 1 -->
+        <p class="lead text-muted">
+            El desarrollo web ha experimentado una transformación radical en las últimas décadas. Lo que comenzó como simples documentos de hipertexto vinculados entre sí ha evolucionado hasta convertirse en plataformas interactivas capaces de procesar datos en tiempo real, brindar experiencias inmersivas y conectar a miles de millones de usuarios en todo el planeta.
+        </p>
+
+        <!-- Galería de 3 Imágenes -->
+        <section class="my-4">
+            <h4 class="section-title mb-3">Galería Visual de Tecnología</h4>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <img src="img/tech1.jpg" alt="Puesto de trabajo con código y portátil" class="img-showcase">
+                    <p class="text-center text-muted small mt-2">1. Entorno de codificación ágil</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/tech2.jpg" alt="Pantalla mostrando sintaxis de programación" class="img-showcase">
+                    <p class="text-center text-muted small mt-2">2. Arquitectura de software moderna</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/tech3.jpg" alt="Múltiples dispositivos mostrando diseño responsive" class="img-showcase">
+                    <p class="text-center text-muted small mt-2">3. Adaptabilidad multidispositivo</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Párrafo 2 -->
+        <p>
+            Uno de los pilares esenciales del diseño contemporáneo es la filosofía «Mobile-First» y el diseño responsivo. Gracias a frameworks como Bootstrap, los desarrolladores pueden implementar rápidamente sistemas de grillas flexibles, componentes accesibles y estilos consistentes que garantizan que una aplicación luzca impecable tanto en teléfonos móviles como en monitores de alta resolución.
+        </p>
+
+        <!-- Componente Bootstrap 2: Acordeón Interactivo -->
+        <section class="my-5">
+            <h4 class="section-title mb-3">Componente Bootstrap: Acordeón de Tecnologías Frontend</h4>
+            <div class="accordion" id="accordionTecnologia">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingHtml">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHtml" aria-expanded="true" aria-controls="collapseHtml">
+                            <strong>HTML5 Semántico</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseHtml" class="accordion-collapse collapse show" aria-labelledby="headingHtml" data-bs-parent="#accordionTecnologia">
+                        <div class="accordion-body">
+                            Estructura de forma clara y accesible el contenido mediante etiquetas semánticas como <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code> y <code>&lt;article&gt;</code>, facilitando la indexación de motores de búsqueda y la compatibilidad con lectores de pantalla.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingCss">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCss" aria-expanded="false" aria-controls="collapseCss">
+                            <strong>CSS3 y Frameworks (Bootstrap)</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseCss" class="accordion-collapse collapse" aria-labelledby="headingCss" data-bs-parent="#accordionTecnologia">
+                        <div class="accordion-body">
+                            Permite controlar la presentación visual, animaciones y diseño responsivo mediante Flexbox, Grid y componentes prediseñados y probados internacionalmente.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingJs">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseJs" aria-expanded="false" aria-controls="collapseJs">
+                            <strong>JavaScript y Reactividad</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseJs" class="accordion-collapse collapse" aria-labelledby="headingJs" data-bs-parent="#accordionTecnologia">
+                        <div class="accordion-body">
+                            Aporta interactividad a la interfaz, manejando eventos del usuario, solicitudes asíncronas y manipulación dinámica del Document Object Model (DOM).
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Párrafo 3 -->
+        <p>
+            Asimismo, la optimización del rendimiento y la accesibilidad web (a11y) son requisitos no negociables en el desarrollo profesional. Reducir los tiempos de carga, minimizar el consumo de datos y asegurar un contraste cromático adecuado no solo mejora el posicionamiento SEO, sino que garantiza que la información sea accesible para todos los usuarios sin barreras tecnológicas.
+        </p>
+
+        <!-- Componente Bootstrap 3: Grupo de Listas con Badges (List Group with Badges) -->
+        <section class="mt-4">
+            <h4 class="section-title mb-3">Componente Bootstrap: List Group con Badges</h4>
+            <ul class="list-group shadow-sm">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Estructuración semántica y accesible
+                    <span class="badge badge-indigo rounded-pill">Completado</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Diseño adaptativo con Bootstrap 5
+                    <span class="badge badge-teal rounded-pill">100% Responsivo</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Optimización de rendimiento y buenas prácticas
+                    <span class="badge badge-sky rounded-pill">En progreso</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

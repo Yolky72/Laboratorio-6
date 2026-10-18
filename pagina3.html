@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 3 - Gastronomía y Arte Culinario</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Paleta Gastronomía / Borgoña, Terracota & Ámbar Cálido */
+        :root {
+            --header-bg: #4a1525;
+            --accent-warm: #f4a261;
+            --accent-hover: #f8c291;
+            --page-bg: #fdf8f4;
+            --heading-color: #4a1525;
+            --subheading-color: #7b2434;
+            --border-accent: #b02a37;
+            --btn-wine: #892034;
+            --btn-wine-hover: #671223;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #3b2828;
+            background-color: var(--page-bg);
+        }
+
+        header {
+            background-color: var(--header-bg);
+            padding: 1rem 2rem;
+            box-shadow: 0 3px 8px rgba(74, 21, 37, 0.3);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: #ffffff !important;
+            text-decoration: none !important;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+            padding-bottom: 4px;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav a:hover {
+            color: var(--accent-hover) !important;
+        }
+
+        nav a.active {
+            color: var(--accent-warm) !important;
+            border-bottom: 2px solid var(--accent-warm) !important;
+        }
+
+        .main-container {
+            max-width: 950px;
+            margin: 3rem auto;
+            padding: 2.5rem;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(74, 21, 37, 0.08);
+            border-top: 5px solid var(--border-accent);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--heading-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .section-title {
+            color: var(--subheading-color);
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card {
+            border-color: #f7d6c8;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 15px rgba(137, 32, 52, 0.15) !important;
+        }
+
+        .btn-wine {
+            background-color: var(--btn-wine);
+            color: #ffffff;
+            border: none;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-wine:hover {
+            background-color: var(--btn-wine-hover);
+            color: #ffffff;
+        }
+
+        .btn-warm-outline {
+            color: var(--btn-wine);
+            border: 1px solid var(--btn-wine);
+            background-color: transparent;
+            transition: all 0.2s ease;
+        }
+
+        .btn-warm-outline:hover {
+            background-color: var(--btn-wine);
+            color: #ffffff;
+        }
+
+        .alert-gourmet {
+            background-color: #fcefe8;
+            border-color: #f7d6c8;
+            color: #6e2a14;
+        }
+
+        .table-custom-header th {
+            background-color: var(--header-bg) !important;
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú de navegación idéntico a index.html con página actual activa y paleta gastronómica -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina1.html">Página 1</a></li>
+                <li><a href="pagina2.html">Página 2</a></li>
+                <li><a href="pagina3.html" class="active" aria-current="page">Página 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <h1>Gastronomía y Arte Culinario</h1>
+
+        <!-- Componente Bootstrap 1: Alerta estilizada con tonos gastronómicos -->
+        <div class="alert alert-gourmet alert-dismissible fade show my-4" role="alert">
+            <h5 class="alert-heading fw-bold">🍽️ Componente Bootstrap: Alerta Especial</h5>
+            ¡Bienvenido a la Página 3! Descubre la fusión entre técnica gastronómica tradicional e innovación culinaria contemporánea.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+        </div>
+
+        <!-- Párrafo 1 -->
+        <p class="lead text-muted">
+            La gastronomía trasciende la mera nutrición: es una manifestación cultural viva que narra la historia, el clima y los saberes ancestrales de cada comunidad. A través de la combinación armoniosa de aromas, texturas y presentaciones visuales, el arte culinario despierta emociones y reúne a personas alrededor de una mesa compartida.
+        </p>
+
+        <!-- Párrafo 2 -->
+        <p>
+            El verdadero secreto de cualquier platillo sobresaliente radica en la selección rigurosa de ingredientes frescos, locales y de temporada. El movimiento «de la granja a la mesa» ha revitalizado el aprecio por los pequeños productores agrícolas y los métodos de cultivo ecológicos, garantizando sabores intensos y respetuosos con el medio ambiente.
+        </p>
+
+        <!-- Componente Bootstrap 2: Tarjetas (Cards) con imágenes y botón para abrir modal -->
+        <section class="my-5">
+            <h3 class="mb-4 section-title text-center">Especialidades del Chef (Componente Bootstrap: Cards)</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Imagen 1 en Card -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/comida1.jpg" class="card-img-top" alt="Platillo de alta cocina gourmet">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold" style="color: var(--heading-color);">Alta Cocina de Autor</h5>
+                            <p class="card-text text-secondary">
+                                Preparaciones sofisticadas donde la precisión térmica y el equilibrio de matices crean una experiencia sensorial única.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 text-center pb-3">
+                            <button type="button" class="btn btn-warm-outline btn-sm" data-bs-toggle="modal" data-bs-target="#recetaModal">
+                                Ver Secreto del Chef
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen 2 en Card -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/comida2.jpg" class="card-img-top" alt="Ingredientes frescos de la huerta">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold" style="color: var(--heading-color);">Cosecha de Temporada</h5>
+                            <p class="card-text text-secondary">
+                                Vegetales crujientes y hierbas aromáticas recolectados en su punto óptimo de maduración para realzar cada receta.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 text-center pb-3">
+                            <button type="button" class="btn btn-warm-outline btn-sm" data-bs-toggle="modal" data-bs-target="#recetaModal">
+                                Ver Ingredientes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen 3 en Card -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/comida3.jpg" class="card-img-top" alt="Postre artesanal con frutos rojos">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold" style="color: var(--heading-color);">Repostería Fina</h5>
+                            <p class="card-text text-secondary">
+                                Postres equilibrados que combinan la textura crujiente de masas tradicionales con mousses aireadas y frutas silvestres.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 text-center pb-3">
+                            <button type="button" class="btn btn-warm-outline btn-sm" data-bs-toggle="modal" data-bs-target="#recetaModal">
+                                Ver Degustación
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Párrafo 3 -->
+        <p>
+            Finalmente, la repostería y la cocina moderna integran conceptos de la física y la química molecular sin perder de vista la calidez del sabor casero. La precisión en los tiempos de fermentación, el control exacto de temperaturas y el emplatado artístico elevan cada plato a la categoría de una obra irrepetible.
+        </p>
+
+        <!-- Componente Bootstrap 3: Tabla estilizada (Table) -->
+        <section class="mt-5">
+            <h4 class="mb-3 section-title">Componente Bootstrap: Tabla de Tiempos y Maridajes</h4>
+            <div class="table-responsive shadow-sm">
+                <table class="table table-hover table-bordered align-middle mb-0">
+                    <thead class="table-custom-header">
+                        <tr>
+                            <th scope="col">Tiempo de Menú</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Maridaje Sugerido</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-bold" style="color: var(--btn-wine);">1. Entrada</td>
+                            <td>Ensalada fresca con emulsión de cítricos y brotes</td>
+                            <td>Vino blanco Sauvignon Blanc</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold" style="color: var(--btn-wine);">2. Plato Fuerte</td>
+                            <td>Corte sellado al romero con puré trufado</td>
+                            <td>Vino tinto Cabernet Sauvignon</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold" style="color: var(--btn-wine);">3. Postre</td>
+                            <td>Tarta artesanal de frutos rojos y crema batida</td>
+                            <td>Café espresso o vino espumoso</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Componente Bootstrap 4: Ventana Modal Interactiva -->
+    <div class="modal fade" id="recetaModal" tabindex="-1" aria-labelledby="recetaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: var(--header-bg); color: #ffffff;">
+                    <h5 class="modal-title" id="recetaModalLabel">✨ Componente Bootstrap: Modal del Chef</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-2"><strong>Consejo culinario del día:</strong></p>
+                    <p class="text-secondary">
+                        Para lograr un dorado perfecto sin resecar los alimentos, asegúrate de que la sartén o parrilla alcance la temperatura adecuada antes de colocar los ingredientes, y permite que las piezas reposen unos minutos antes de cortarlas.
+                    </p>
+                    <div class="alert alert-gourmet mb-0 small">
+                        💡 Este cuadro de diálogo interactivo es un componente nativo de <strong>Bootstrap 5 (Modal)</strong> controlado mediante atributos de datos <code>data-bs-toggle</code>.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Entendido</button>
+                    <button type="button" class="btn btn-wine" data-bs-dismiss="modal">¡Buen provecho!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

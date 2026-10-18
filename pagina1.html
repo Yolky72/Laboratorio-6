@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1 - Destinos Naturales</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Paleta Verde Naturaleza & Bosque */
+        :root {
+            --header-bg: #1b4332;
+            --accent-green: #52b788;
+            --accent-hover: #74c69d;
+            --page-bg: #edf6f0;
+            --heading-color: #1b4332;
+            --subheading-color: #2d6a4f;
+            --btn-forest: #2d6a4f;
+            --btn-forest-hover: #1b4332;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background-color: var(--page-bg);
+        }
+
+        header {
+            background-color: var(--header-bg);
+            padding: 1rem 2rem;
+            box-shadow: 0 3px 8px rgba(27, 67, 50, 0.25);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: #ffffff !important;
+            text-decoration: none !important;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+            padding-bottom: 4px;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav a:hover {
+            color: var(--accent-hover) !important;
+        }
+
+        nav a.active {
+            color: var(--accent-green) !important;
+            border-bottom: 2px solid var(--accent-green) !important;
+        }
+
+        .main-container {
+            max-width: 950px;
+            margin: 3rem auto;
+            padding: 2.5rem;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(27, 67, 50, 0.08);
+            border-top: 5px solid var(--accent-green);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--heading-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .section-title {
+            color: var(--subheading-color);
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card {
+            border-color: #d8f3dc;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 15px rgba(45, 106, 79, 0.15) !important;
+        }
+
+        .btn-nature {
+            background-color: var(--btn-forest);
+            color: #ffffff;
+            border: none;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-nature:hover {
+            background-color: var(--btn-forest-hover);
+            color: #ffffff;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #d8f3dc;
+            color: var(--heading-color);
+            font-weight: 600;
+        }
+
+        .accordion-button:focus {
+            box-shadow: 0 0 0 0.25rem rgba(82, 183, 136, 0.25);
+            border-color: var(--accent-green);
+        }
+
+        .alert-nature {
+            background-color: #d8f3dc;
+            border-color: #b7e4c7;
+            color: #1b4332;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú de navegación idéntico a index.html con página actual activa y paleta natural -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina1.html" class="active" aria-current="page">Página 1</a></li>
+                <li><a href="pagina2.html">Página 2</a></li>
+                <li><a href="pagina3.html">Página 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <h1>Destinos y Paisajes Naturales</h1>
+
+        <!-- Componente Bootstrap 1: Alerta Informativa Descartable -->
+        <div class="alert alert-nature alert-dismissible fade show my-4" role="alert">
+            <h5 class="alert-heading fw-bold">🌿 Componente Bootstrap: Alerta Informativa</h5>
+            ¡Bienvenido a la Página 1! Explora los paisajes más impresionantes y descubre las recomendaciones para practicar senderismo de forma responsable.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+        </div>
+
+        <!-- Párrafo 1 -->
+        <p class="lead text-muted">
+            Viajar y explorar parajes naturales ofrece una oportunidad inigualable para desconectarse de la rutina cotidiana y sumergirse en la majestuosidad de la tierra. Desde imponentes cumbres alpinas hasta costas tropicales de arena fina, la diversidad geográfica del planeta brinda experiencias memorables para todo tipo de aventureros.
+        </p>
+
+        <!-- Párrafo 2 -->
+        <p>
+            Las montañas han ejercido siempre una fascinación especial en la humanidad. Realizar rutas de senderismo y escalada en estos ecosistemas no solo permite apreciar vistas panorámicas espectaculares, sino que también fomenta la resiliencia, el acondicionamiento físico y un profundo respeto hacia las fuerzas de la naturaleza y su preservación.
+        </p>
+
+        <!-- Componente Bootstrap 2: Tarjetas (Cards) en sistema de rejilla (Grid) -->
+        <section class="my-5">
+            <h3 class="mb-4 section-title text-center">Galería de Destinos (Componente Bootstrap: Cards)</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Imagen 1 en Card -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/destino1.jpg" class="card-img-top" alt="Cordilleras y montañas nevadas">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold" style="color: var(--heading-color);">Cordilleras Nevadas</h5>
+                            <p class="card-text text-secondary">
+                                Majestuosas alturas que desafían los límites del horizonte y albergan glaciares milenarios.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 text-center pb-3">
+                            <a href="#" class="btn btn-nature btn-sm">Ver ruta</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen 2 en Card -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/destino2.jpg" class="card-img-top" alt="Playa paradisíaca y aguas cristalinas">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold" style="color: var(--heading-color);">Costas Tropicales</h5>
+                            <p class="card-text text-secondary">
+                                Playas cálidas de aguas turquesas ideales para el descanso, el buceo y la contemplación marina.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 text-center pb-3">
+                            <a href="#" class="btn btn-nature btn-sm">Explorar costa</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen 3 en Card -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/destino3.jpg" class="card-img-top" alt="Bosque frondoso con sendero">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold" style="color: var(--heading-color);">Bosques Nubosos</h5>
+                            <p class="card-text text-secondary">
+                                Frondosos senderos rodeados de árboles centenarios, fauna autóctona y aire completamente puro.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 text-center pb-3">
+                            <a href="#" class="btn btn-nature btn-sm">Conocer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Párrafo 3 -->
+        <p>
+            Al visitar cualquier entorno natural, es imperativo adoptar una ética de conservación basada en el principio de «no dejar rastro». Llevar consigo todos los residuos generados, respetar la flora y fauna local y mantenerse en los senderos señalizados garantiza que estas maravillas permanezcan intactas para las futuras generaciones.
+        </p>
+
+        <!-- Componente Bootstrap Adicional: Acordeón de Consejos -->
+        <section class="mt-5">
+            <h4 class="mb-3 section-title">Preguntas Frecuentes para Viajeros (Componente Bootstrap: Acordeón)</h4>
+            <div class="accordion" id="accordionDestinos">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Cuál es la mejor época para viajar a zonas montañosas?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionDestinos">
+                        <div class="accordion-body">
+                            Por lo general, la temporada de primavera y principios de otoño ofrece condiciones climáticas estables y temperaturas templadas ideales para caminatas prolongadas.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Qué equipo esencial se recomienda llevar?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionDestinos">
+                        <div class="accordion-body">
+                            Calzado con buen agarre, suficiente agua para hidratación continua, protector solar, un botiquín básico de primeros auxilios y capas de ropa térmica impermeable.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
